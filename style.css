@@ -1,0 +1,163 @@
+/* Общие стили */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Контейнер */
+#page-container {
+    display: flex;
+}
+
+/* Навигация */
+#navbar {
+    width: 20%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.menu-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 15px 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1abc9c;
+}
+
+/* Основной контент */
+#content {
+    width: 80%;
+    padding: 20px;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section-heading {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.sub-heading {
+    font-size: 20px;
+    color: #34495e;
+}
+
+.section-subtitle {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.paragraph-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.list-text li {
+    margin-bottom: 5px;
+}
+
+/* Изображения */
+.featured-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    margin: 15px 0;
+}
+
+/* Кнопки */
+.styled-btn {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-btn:hover {
+    background-color: #16a085;
+}
+
+/* Ссылки */
+.custom-link {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+    color: #1abc9c;
+}
+
+/* Таблица */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.styled-table th, 
+.styled-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: #34495e;
+    color: white;
+}
+
+/* Форма */
+#user-form {
+    margin-top: 15px;
+}
+
+.form-input {
+    margin: 8px 0;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}

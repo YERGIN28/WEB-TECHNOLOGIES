@@ -1,101 +1,116 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <title>My First WebPage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <Table border="1" width="100%">
-        <tr>
-            <td width="15%" align="center">
-                <h1 >MENU</h1>
-            
-            </td>
-            <td width="85%">
+    <div id="page-container">
+
+       
+        <nav id="navbar">
+            <h1 class="menu-title">MENU</h1>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li class="nav-item"><a href="#websites" class="nav-link">Websites</a></li>
+                <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
         
-        <h1 align="center">Main content</h1>
-        <hr>
-        <h1>Ginayat Yerassyl</h1>
-        <h2>WEB Technologies</h2>
-        <h3>About me </h3>
-        <p>My name is Yerassyl,and I'm 19 years old.</p>
-        <p>My hobbies:</p>
-        <ol>
-            <li>playing on dombyra</li>
-            <li>playing vollyeball</li>
-            <li>speedcubing</li>
-        </ol>
-        <p>My favorite websites :</p>
-            <ul>
-                <li>Youtube</li>
-                <li>Wikipedia</li>
-                <li>Kazsport</li>
-            </ul>
-            <p>Me:</p>    
-            <img src="my_img.jpg"  height="500">
-            <p>My mood today: &#128293; &#127952; &#128564;</p>
-            <p>My favorite websites links:</p>
+        <main id="content">
+            <h1 class="main-heading">Main content</h1>
+            <hr>
+
+            <section id="about" class="content-section">
+                <h1 class="section-heading">Ginayat Yerassyl</h1>
+                <h2 class="sub-heading">WEB Technologies</h2>
+                <h3 class="section-subtitle">About me</h3>
+                <p class="paragraph-text">My name is Yerassyl, and I'm 19 years old.</p>
+            </section>
+
+            <section id="hobbies" class="content-section">
+                <h3 class="section-subtitle">My hobbies:</h3>
+                <ol class="list-text">
+                    <li>Playing on dombyra</li>
+                    <li>Playing volleyball</li>
+                    <li>Speedcubing</li>
+                </ol>
+            </section>
+
+            <section id="websites" class="content-section">
+                <h3 class="section-subtitle">My favorite websites:</h3>
+                <ul class="list-text">
+                    <li>Youtube</li>
+                    <li>Wikipedia</li>
+                    <li>Kazsport</li>
+                </ul>
+                <h3 class="section-subtitle">Me:</h3>
+                <img src="my_img.jpg" alt="My photo" class="featured-image">
+                <p class="paragraph-text">My mood today: &#128293; &#127952; &#128564;</p>
+
+                <h3 class="section-subtitle">My favorite websites links:</h3>
+                <ul class="list-text">
+                    <li><a href="https://www.youtube.com/" class="custom-link">Youtube</a></li>
+                    <li><a href="https://www.wikipedia.org/" class="custom-link">Wikipedia</a></li>
+                    <li><a href="https://qazsporttv.kz/kz/live" class="custom-link">Kazsport</a></li>
+                </ul>
+            </section>
+
+            <button class="styled-btn">Click me</button>
+
             
-            <ul>
-            <li><a href="https://www.youtube.com/">Youtube</a></li>
-            <li><a href="https://www.wikipedia.org/"> Wikipedia </a></li>
-            <li><a href="https://qazsporttv.kz/kz/live"> Kazsport</a></li>
-            </ul>
-            <br>
-            <br> 
-            <button>Click me</button>
-            <br>
-            <br>
-            <table bgcolor="blue">
-                <tr bgcolor ="lightblue">
-                    <th colspan="3" align="center">Schedule</th>
-                </tr>
-                <tr bgcolor ="lightblue">
-                    <th>Subject</th>
-                    <th>Day</th>
-                    <th>Time</th>
-                </tr>
-                <tr bgcolor="lightblue" align="center">
-                    <td>DAA</td>
-                    <td>Monday</td>
-                    <td>16:00-17:50</td>
-                </tr>
-                <tr bgcolor="lightblue" align="center">
-                    <td>Russian language</td>
-                    <td>Tuesday</td>
-                    <td>14:00-15:50</td>
-                </tr>
-                <tr bgcolor="lightblue" align="center">
-                    <td>SDP</td>
-                    <td>Wednesday</td>
-                    <td>16:00-17:50</td>
-                </tr>
-                <tr bgcolor="lightblue" align="center">
-                    <td>Frontend Web</td>
-                    <td>Thursday</td>
-                    <td>14:00-15:50</td>
-                </tr>
-               
+            <section id="schedule" class="content-section">
+                <h3 class="section-subtitle">Schedule</h3>
+                <table class="styled-table">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>DAA</td>
+                        <td>Monday</td>
+                        <td>16:00-17:50</td>
+                    </tr>
+                    <tr>
+                        <td>Russian language</td>
+                        <td>Tuesday</td>
+                        <td>14:00-15:50</td>
+                    </tr>
+                    <tr>
+                        <td>SDP</td>
+                        <td>Wednesday</td>
+                        <td>16:00-17:50</td>
+                    </tr>
+                    <tr>
+                        <td>Frontend Web</td>
+                        <td>Thursday</td>
+                        <td>14:00-15:50</td>
+                    </tr>
+                </table>
+            </section>
 
-            </table><br>
-             <form >
-                <label>Name</label>
-                  <input type="text" name="name"><br>
-                <label>Email</label>
-                  <input type="email" name="email"><br>
-                <label>Favorite color</label>
-                  <input type="color" name="" id=""><br>
+            
+            <section id="contact" class="content-section">
+                <h3 class="section-subtitle">Contact Me</h3>
+                <form id="user-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-input"><br>
 
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-input"><br>
 
-                  <input type="submit" value="Submit"><br>
+                    <label for="color">Favorite color</label>
+                    <input type="color" name="color" id="color" class="form-input"><br>
 
+                    <input type="submit" value="Submit" class="submit-btn">
                 </form>
-            </td>
-        </tr>    
-    </Table>            
-                
-                    
-        
+            </section>
+        </main>
+    </div>
 </body>
 </html>
