@@ -1,116 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>My First WebPage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Yerassyl's WebPage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="page-container">
 
-       
-        <nav id="navbar">
-            <h1 class="menu-title">MENU</h1>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
-                <li class="nav-item"><a href="#websites" class="nav-link">Websites</a></li>
-                <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+  <!-- Header -->
+  <header class="header-flex">
+    <div class="logo">Yerassyl</div>
+    <nav class="nav-flex">
+      <a href="#cards">Cards</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
 
-        
-        <main id="content">
-            <h1 class="main-heading">Main content</h1>
-            <hr>
-
-            <section id="about" class="content-section">
-                <h1 class="section-heading">Ginayat Yerassyl</h1>
-                <h2 class="sub-heading">WEB Technologies</h2>
-                <h3 class="section-subtitle">About me</h3>
-                <p class="paragraph-text">My name is Yerassyl, and I'm 19 years old.</p>
-            </section>
-
-            <section id="hobbies" class="content-section">
-                <h3 class="section-subtitle">My hobbies:</h3>
-                <ol class="list-text">
-                    <li>Playing on dombyra</li>
-                    <li>Playing volleyball</li>
-                    <li>Speedcubing</li>
-                </ol>
-            </section>
-
-            <section id="websites" class="content-section">
-                <h3 class="section-subtitle">My favorite websites:</h3>
-                <ul class="list-text">
-                    <li>Youtube</li>
-                    <li>Wikipedia</li>
-                    <li>Kazsport</li>
-                </ul>
-                <h3 class="section-subtitle">Me:</h3>
-                <img src="my_img.jpg" alt="My photo" class="featured-image">
-                <p class="paragraph-text">My mood today: &#128293; &#127952; &#128564;</p>
-
-                <h3 class="section-subtitle">My favorite websites links:</h3>
-                <ul class="list-text">
-                    <li><a href="https://www.youtube.com/" class="custom-link">Youtube</a></li>
-                    <li><a href="https://www.wikipedia.org/" class="custom-link">Wikipedia</a></li>
-                    <li><a href="https://qazsporttv.kz/kz/live" class="custom-link">Kazsport</a></li>
-                </ul>
-            </section>
-
-            <button class="styled-btn">Click me</button>
-
-            
-            <section id="schedule" class="content-section">
-                <h3 class="section-subtitle">Schedule</h3>
-                <table class="styled-table">
-                    <tr>
-                        <th>Subject</th>
-                        <th>Day</th>
-                        <th>Time</th>
-                    </tr>
-                    <tr>
-                        <td>DAA</td>
-                        <td>Monday</td>
-                        <td>16:00-17:50</td>
-                    </tr>
-                    <tr>
-                        <td>Russian language</td>
-                        <td>Tuesday</td>
-                        <td>14:00-15:50</td>
-                    </tr>
-                    <tr>
-                        <td>SDP</td>
-                        <td>Wednesday</td>
-                        <td>16:00-17:50</td>
-                    </tr>
-                    <tr>
-                        <td>Frontend Web</td>
-                        <td>Thursday</td>
-                        <td>14:00-15:50</td>
-                    </tr>
-                </table>
-            </section>
-
-            
-            <section id="contact" class="content-section">
-                <h3 class="section-subtitle">Contact Me</h3>
-                <form id="user-form">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form-input"><br>
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-input"><br>
-
-                    <label for="color">Favorite color</label>
-                    <input type="color" name="color" id="color" class="form-input"><br>
-
-                    <input type="submit" value="Submit" class="submit-btn">
-                </form>
-            </section>
-        </main>
+  <!-- Cards -->
+  <section id="cards" class="section card-row">
+    <div class="card">
+      <img src="img/card1.jpg" alt="Card 1">
+      <h3>Card One</h3>
+      <p>Technology, coding and web development are my passion</p>
+      <button>Read More</button>
     </div>
+    <div class="card">
+      <img src="img/card2.jpg" alt="Card 2">
+      <h3>Card Two</h3>
+      <p>I enjoy playing volleyball and improving my jump & spike.</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="img/card3.jpg" alt="Card 3">
+      <h3>Card Three</h3>
+      <p>Traditional Kazakh music inspires me when I play dombyra.</p>
+      <button>Read More</button>
+    </div>
+  </section>
+
+  <!-- Grid Layout Demo -->
+  <section class="section grid-layout">
+    <header class="grid-header">Grid Header</header>
+    <aside class="grid-sidebar">Sidebar</aside>
+    <main class="grid-main">Main Content Area</main>
+    <footer class="grid-footer">Grid Footer</footer>
+  </section>
+
+  <!-- Image Gallery -->
+  <section id="gallery" class="section image-gallery">
+    <img src="img/gallery1.jpg" alt="img1">
+    <img src="img/gallery2.jpg" alt="img2">
+    <img src="img/gallery3.jpg" alt="img3">
+    <img src="img/gallery4.jpg" alt="img4">
+    <img src="img/gallery5.jpg" alt="img5">
+    <img src="img/gallery6.jpg" alt="img6">
+    <img src="img/gallery7.jpg" alt="img7">
+    <img src="img/gallery8.jpg" alt="img8">
+    <img src="img/gallery9.jpg" alt="img9">
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section portfolio">
+    <header class="portfolio-header">
+      <div class="portfolio-logo">My Portfolio</div>
+      <nav class="portfolio-nav">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <div class="portfolio-main">
+      <div class="projects">
+    <div class="project-card">
+        <img src="img/project1.png" alt="Personal Website">
+        <h3>Personal Website</h3>
+        <p>A responsive personal website built with HTML, CSS and JavaScript.</p>
+        <button>See More</button>
+    </div>
+    <div class="project-card">
+        <img src="img/project2.jpg" alt="Volleyball Training App">
+        <h3>Volleyball Training App</h3>
+        <p>An app idea to track jump height, spikes and progress in volleyball.</p>
+        <button>See More</button>
+    </div>
+    <div class="project-card">
+        <img src="img/project3.png" alt="Dombyra Music Player">
+        <h3>Dombyra Music Player</h3>
+        <p>A concept project for an online player dedicated to Kazakh dombyra music.</p>
+        <button>See More</button>
+    </div>
+    </div>
+
+      <aside class="portfolio-sidebar">
+        <h3>About Me</h3>
+        <p>Information about Yerassyl.</p>
+      </aside>
+    </div>
+
+    <footer class="portfolio-footer">
+      <p>© 2025 Yerassyl – All Rights Reserved</p>
+    </footer>
+  </section>
+
+  <!-- About Me (старый Assignment 2) -->
+  <section id="about" class="section about-section">
+    <aside class="about-menu">
+      <h1>MENU</h1>
+    </aside>
+    <div class="about-content">
+      <h1>Ginayat Yerassyl</h1>
+      <h2>WEB Technologies</h2>
+      <h3>About me</h3>
+      <p>My name is Yerassyl, and I'm 19 years old.</p>
+
+      <h3>My hobbies:</h3>
+      <ol>
+        <li>playing dombyra</li>
+        <li>playing volleyball</li>
+        <li>speedcubing</li>
+      </ol>
+
+      <h3>My favorite websites:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+        <li><a href="https://qazsporttv.kz/kz/live">Kazsport</a></li>
+      </ul>
+
+      <h3>Me:</h3>
+      <img src="my_img.jpg" alt="My Photo" height="300">
+      <p>My mood today: &#128293; &#127952; &#128564;</p>
+
+      <button>Click me</button>
+
+      <h3>Schedule:</h3>
+      <table>
+        <tr>
+          <th>Subject</th>
+          <th>Day</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <td>DAA</td>
+          <td>Monday</td>
+          <td>16:00-17:50</td>
+        </tr>
+        <tr>
+          <td>Russian language</td>
+          <td>Tuesday</td>
+          <td>14:00-15:50</td>
+        </tr>
+        <tr>
+          <td>SDP</td>
+          <td>Wednesday</td>
+          <td>16:00-17:50</td>
+        </tr>
+        <tr>
+          <td>Frontend Web</td>
+          <td>Thursday</td>
+          <td>14:00-15:50</td>
+        </tr>
+      </table>
+
+      <h3>Contact me:</h3>
+      <form>
+        <label>Name</label>
+        <input type="text" name="name"><br>
+        <label>Email</label>
+        <input type="email" name="email"><br>
+        <label>Favorite color</label>
+        <input type="color"><br>
+        <input type="submit" value="Submit"><br>
+      </form>
+    </div>
+  </section>
+
 </body>
 </html>
